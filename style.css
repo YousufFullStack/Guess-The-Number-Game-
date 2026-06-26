@@ -1,0 +1,125 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+}
+
+#wrapper {
+    width: 420px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#wrapper h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+#wrapper p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+.form {
+    margin-top: 25px;
+}
+
+#guess {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#guessField {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#guessField:focus {
+    box-shadow: 0 0 10px #00d4ff;
+}
+
+#subt {
+    width: 100%;
+    padding: 12px;
+    background: #00d4ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#subt:hover {
+    background: #0099cc;
+    transform: translateY(-2px);
+}
+
+.resultParse {
+    margin-top: 25px;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.guesses {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.Last {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.loeOrHi {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffeb3b;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+
+    #wrapper {
+        padding: 25px;
+    }
+
+    #wrapper h1 {
+        font-size: 1.6rem;
+    }
+
+    #guessField,
+    #subt {
+        font-size: 0.95rem;
+    }
+}
